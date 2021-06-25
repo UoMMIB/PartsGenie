@@ -6,4 +6,6 @@
 /**/static/sbol/
 /**/static/export/
 /data/
-.idea/workspace.xml
+
+# Ignore all PyCharm-specific IDE layout files
+.idea/*
