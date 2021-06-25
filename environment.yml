@@ -9,7 +9,7 @@ dependencies:
     - pandas
     - flask
     - gunicorn
-    - pysbol
+    - pysbol2
     - pip
     - pip:
         -  git+https://github.com/UoMMIB/liv-utils.git

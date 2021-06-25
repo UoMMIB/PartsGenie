@@ -2,7 +2,7 @@ cython
 pandas
 Flask
 gunicorn
-pySBOL
+pySBOL2
 git+https://github.com/UoMMIB/liv-utils
 
 
