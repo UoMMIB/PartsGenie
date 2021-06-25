@@ -2,5 +2,17 @@ cython
 pandas
 Flask
 gunicorn
-pySBOL
+pySBOL2
 git+https://github.com/UoMMIB/liv-utils
+
+
+# __IMPORTANT__
+# This file must be kept in sync with environment.yml so that 
+# anyone using conda will have the same dependencies. 
+
+
+# _Notes_
+# This is a requirements file for pip. 
+#
+# gunicorn requires Linux (or perhaps Mac), it is not compatible with Windows
+#

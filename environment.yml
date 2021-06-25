@@ -1,0 +1,33 @@
+name: PartsGenie
+
+channels:
+    - anaconda  # for gunicorn (does not run on Windows)
+
+dependencies:
+    - python=3.8
+    - cython
+    - pandas
+    - flask
+    - gunicorn
+    - pysbol2
+    - pip
+    - pip:
+        -  git+https://github.com/UoMMIB/liv-utils.git
+
+# __IMPORTANT__
+# This file must be kept in sync with requirements.txt so that 
+# anyone using pip without conda will have the same dependencies. 
+
+
+# _Notes_
+# This is an environment file for Conda. 
+#
+# _How to use this file_
+# To create a conda environment called PartsGenie, run
+#   conda env create -f environment.yml
+#
+# To update an environment, following changes to dependencies, run
+#   conda env update --name PartsGenie --file environment.yml
+#
+# gunicorn requires Linux (or perhaps Mac), it is not compatible with Windows
+#
