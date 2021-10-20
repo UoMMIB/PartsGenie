@@ -1,43 +1,47 @@
 name: PartsGenie
-
 channels:
     - anaconda  # for gunicorn (does not run on Windows)
-
+    - conda-forge
 dependencies:
-    - python=3.8
-#    - cython
-#    - pandas
-#    - flask
-#    - gunicorn
-#    - pysbol2
-#    - pip
-#    - pip:
-#        -  git+https://github.com/UoMMIB/liv-utils.git
-    cython==0.29.23
-    pandas==1.2.4
-    pytz==2021.1
-    python-dateutil==2.8.1
-    numpy==1.20.3
-    six==1.16.0
-    Flask==2.0.1
-    itsdangerous==2.0.1
-    Werkzeug==2.0.1
-    click==8.0.1
-    Jinja2==3.0.1
-    MarkupSafe==2.0.1
-    gunicorn==20.1.0
-    setuptools==57.0.0
-    pySBOL==2.3.3.post8
-    distro==1.5.0
-    requests==2.25.1
-    idna==2.10
-    urllib3==1.26.5
-    certifi==2020.12.5
-    chardet==4.0.0
-    BioPython==1.78
-    pip:
-        git+https://github.com/neilswainston/liv-utils
-        synbiochem_py-0.6.34-py3-none-any.whl
+  - python=3.7
+  - cython
+  - pandas
+  - flask
+  - gunicorn
+  - pysbol
+  - BioPython=1.78
+  - sbol2
+  - pip
+  - pip:
+    - git+https://github.com/UoMMIB/liv-utils.git
+    #cython==0.29.23
+    #pandas==1.2.4
+    #pytz==2021.1
+    #python-dateutil==2.8.1
+    #numpy==1.20.3
+    #six==1.16.0
+    #Flask==2.0.1
+    #itsdangerous==2.0.1
+    #Werkzeug==2.0.1
+    #click==8.0.1
+    #Jinja2==3.0.1
+    #MarkupSafe==2.0.1
+    #gunicorn==20.1.0
+    #setuptools==57.0.0
+    #pySBOL==2.3.3.post8
+    #distro==1.5.0
+    #requests==2.25.1
+    #idna==2.10
+    #urllib3==1.26.5
+    #certifi==2020.12.5
+    #chardet==4.0.0
+    #BioPython==1.78
+    #sbol2
+    #pip
+    #pip:
+     #   git+https://github.com/UoMMIB/liv-utils.git
+        #git+https://github.com/neilswainston/liv-utils
+        #synbiochem_py-0.6.34-py3-none-any.whl
 
 # __IMPORTANT__
 # This file must be kept in sync with requirements.txt so that 

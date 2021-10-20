@@ -1,14 +1,4 @@
-FROM gcr.io/google-appengine/python
-
-# Create a virtualenv for dependencies. This isolates these packages from
-# system-level packages.
-# Use -p python3 or -p python3.7 to select python version. Default is version 2.
-RUN virtualenv /env -p python3.7
-
-# Setting these environment variables are the same as running
-# source /env/bin/activate.
-ENV VIRTUAL_ENV /env
-ENV PATH /env/bin:$PATH
+FROM python:3.7
 
 # Issues experienced with ViennaRNA-2.4.14, therefore retaining 'stable' version:
 ARG VIENNA_VERSION="ViennaRNA-2.4.11"
@@ -19,17 +9,26 @@ RUN curl -fsSL https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_4_x/$VIENN
 	&& ./configure --without-perl --without-python --without-kinfold --without-forester --without-rnalocmin\
 	&& make \
 	&& make install
-	
-ENV PYTHONPATH /usr/local/lib/python3.7/site-packages:$PYTHONPATH
 
-# Copy the application's requirements.txt and run pip to install all
-# dependencies into the virtualenv.
-ADD requirements.txt /app/requirements.txt
-RUN pip install -r /app/requirements.txt
+EXPOSE 5000
 
-# Add the application source code.
-ADD . /app
+# Keeps Python from generating .pyc files in the container
+ENV PYTHONDONTWRITEBYTECODE=1
 
-# Run a WSGI server to serve the application. gunicorn must be declared as
-# a dependency in requirements.txt.
-CMD gunicorn -t 3600 -b :$PORT main:app
+# Turns off buffering for easier container logging
+ENV PYTHONUNBUFFERED=1
+
+# Install pip requirements
+COPY requirements.txt .
+RUN python -m pip install -r requirements.txt
+
+WORKDIR /app
+COPY . /app
+
+# Creates a non-root user with an explicit UID and adds permission to access the /app folder
+# For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
+RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
+USER appuser
+
+# During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "main:app"]
