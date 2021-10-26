@@ -5,7 +5,7 @@ gunicorn
 pySBOL
 sbol2
 BioPython
-git+https://github.com/UoMMIB/liv-utils
+#git+https://github.com/UoMMIB/liv-utils.git@Update-to-ICE-5.9.3
 
 
 # __IMPORTANT__

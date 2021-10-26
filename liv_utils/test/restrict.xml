@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+  <sbol:ComponentDefinition rdf:about="https://ice.synbiochem.co.uk:443/entry/dc#9769e44a-35c5-4e29-9a7b-89ca741069c5">
+    <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#9769e44a-35c5-4e29-9a7b-89ca741069c5"/>
+    <sbol:displayId>SBC000105</sbol:displayId>
+    <dcterms:title>CHI</dcterms:title>
+    <dcterms:description>ORF</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000149"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105">
+    <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105"/>
+    <sbol:displayId>SBC000105</sbol:displayId>
+    <dcterms:title>CHI</dcterms:title>
+    <dcterms:description>ORF</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:component>
+      <sbol:Component rdf:about="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105/component1">
+        <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105/component1"/>
+        <sbol:displayId>component1</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#af56412a-4226-42ef-9f7a-998ea66a3322"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105/component0">
+        <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105/component0"/>
+        <sbol:displayId>component0</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#9769e44a-35c5-4e29-9a7b-89ca741069c5"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://ice.synbiochem.co.uk:443/entry/sa#b507e5a3-5b35-4119-b748-74fc0b5eb4c7">
+        <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/sa#b507e5a3-5b35-4119-b748-74fc0b5eb4c7"/>
+        <sbol:displayId>annotation1</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="https://ice.synbiochem.co.uk:443/entry/sa#b507e5a3-5b35-4119-b748-74fc0b5eb4c7/range">
+            <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/sa#b507e5a3-5b35-4119-b748-74fc0b5eb4c7/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>1</sbol:start>
+            <sbol:end>881</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105/component0"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://ice.synbiochem.co.uk:443/entry/sa#e4ac7579-2606-4382-91e2-cf2199363297">
+        <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/sa#e4ac7579-2606-4382-91e2-cf2199363297"/>
+        <sbol:displayId>annotation2</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="https://ice.synbiochem.co.uk:443/entry/sa#e4ac7579-2606-4382-91e2-cf2199363297/range">
+            <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/sa#e4ac7579-2606-4382-91e2-cf2199363297/range"/>
+            <sbol:displayId>range</sbol:displayId>
+            <sbol:start>86</sbol:start>
+            <sbol:end>823</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#SBC000105/component1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="https://ice.synbiochem.co.uk:443/entry/ds#c5f15c9ab44195ba62192a7d6106218af426e3dc"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://ice.synbiochem.co.uk:443/entry/dc#af56412a-4226-42ef-9f7a-998ea66a3322">
+    <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/dc#af56412a-4226-42ef-9f7a-998ea66a3322"/>
+    <sbol:displayId>af56412a_4226_42ef_9f7a-998ea66a3322</sbol:displayId>
+    <dcterms:title>AtCHI(co)</dcterms:title>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://identifiers.org/so/SO:0000987"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://ice.synbiochem.co.uk:443/entry/ds#c5f15c9ab44195ba62192a7d6106218af426e3dc">
+    <sbol:persistentIdentity rdf:resource="https://ice.synbiochem.co.uk:443/entry/ds#c5f15c9ab44195ba62192a7d6106218af426e3dc"/>
+    <sbol:elements>gaattcaaaagatctgagtcttgtaagtaccgccactactcactacgaggccccttactcgggatttcataaggagattaatattatgtcgtcatcaaacgcgtgcgcgagcccttcaccgtttccggccgttaccaaattgcacgtagattcagtgacgttcgttccgtctgtaaaatcccctgcgagcagcaacccgttatttctgggcggcgctggcgttcgcggtctggatattcagggtaaattcgtaatctttaccgttattggggtatatctggagggtaacgccgtccccagtttaagtgttaagtggaaaggcaaaaccaccgaagaactgaccgaaagcattccgttctttcgtgagatcgttacaggcgccttcgagaaattcattaaggttaccatgaagttgcctctgaccggccaacagtatagcgaaaaagtgactgaaaactgcgttgccatttggaaacagctgggattatatactgattgtgaggcgaaagcggtagagaaatttctggaaatcttcaaagaggaaaccttcccgccgggcagcagtattctgttcgccctcagcccgaccggatcgctgacggttgccttttctaaagatgatagtatccccgaaacgggcattgctgttatcgagaataaactcctggcggaagcagttctagaaagcattattggtaaaaatggtgtttctcctggaacccgtctgagtgttgctgaacggctgtcgcagctgatgatgaagaataaagacgaaaaagaagtgagcgatcacagcgtggaagaaaaattagcgaaagaaaattaacaaacaagaagtaacttatcggcagtcggattgtagactcggatccaaactcgag</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+</rdf:RDF>
