@@ -18,8 +18,10 @@ class TaxonomyFactory():
 
     def __init__(self):
         ncbi_files_dir = _get_files()
-        self.__ids = _parse_nodes(os.path.join(ncbi_files_dir, 'nodes.dmp'))
-        self.__names = _parse_names(os.path.join(ncbi_files_dir, 'names.dmp'))
+
+        if ncbi_files_dir:
+            self.__ids = _parse_nodes(os.path.join(ncbi_files_dir, 'nodes.dmp'))
+            self.__names = _parse_names(os.path.join(ncbi_files_dir, 'names.dmp'))
 
     def get_child_ids(self, parent_id):
         '''Get child ids.'''
@@ -43,13 +45,28 @@ def _get_files():
     '''Get files.'''
     tmp = tempfile.NamedTemporaryFile(delete=False)
     url = 'ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz'
-    urllib.request.urlretrieve(url, tmp.name)
+    
+    #WE - Measure to prevent issue where sometimes fails to load.
 
-    with tarfile.open(tmp.name, 'r:gz') as tr:
-        temp_dir = tempfile.gettempdir()
-        tr.extractall(temp_dir)
-        return temp_dir
+    try:
+        urllib.request.urlretrieve(url, tmp.name)
 
+        with tarfile.open(tmp.name, 'r:gz') as tr:
+            temp_dir = tempfile.gettempdir()
+            tr.extractall(temp_dir)
+            return temp_dir
+
+    except Exception as err: 
+        curr_dir = os.path.dirname(os.path.realpath(__file__))
+        filepath = os.path.join(curr_dir, 'taxdump.tar.gz')
+
+        if not os.path.exists(filepath):
+            return None
+        else:
+            with tarfile.open(filepath, 'r:gz') as tr:
+                temp_dir = tempfile.gettempdir()
+                tr.extractall(temp_dir)
+                return temp_dir
 
 def _parse_nodes(filename):
     '''Parses nodes file.'''

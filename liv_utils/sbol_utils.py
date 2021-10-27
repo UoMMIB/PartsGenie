@@ -8,7 +8,7 @@ All rights reserved.
 import re
 import uuid
 
-from sbol import ComponentDefinition, Document, Range, Sequence, \
+from sbol2 import ComponentDefinition, Document, Range, Sequence, \
     SequenceAnnotation, \
     SBOL_ENCODING_IUPAC, \
     SBOL_ORIENTATION_INLINE, \

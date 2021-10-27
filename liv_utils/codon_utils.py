@@ -168,6 +168,8 @@ class CodonOptimiser():
 
         in_codons = False
 
+        # Read codon usage table for specific taxonomy id
+
         with urllib.request.urlopen(url) as resp:
             for line in resp:
                 line = line.decode('utf-8').strip()
@@ -272,10 +274,18 @@ def _expand_codon_usage_orgs(codon_orgs, new_codon_orgs, factory,
                     if synonym not in new_codon_orgs:
                         new_codon_orgs[synonym] = tax_id
 
-                _expand_codon_usage_orgs(
-                    {None: child_tax_id
-                     for child_tax_id in factory.get_child_ids(tax_id)},
-                    new_codon_orgs, factory)
+                # WE - previous only taking last record in dict
+                #_expand_codon_usage_orgs(
+                #    {None: child_tax_id
+                #     for child_tax_id in factory.get_child_ids(tax_id)},
+                #    new_codon_orgs, factory)
+
+                for child_tax_id in factory.get_child_ids(tax_id):
+                    for synonym in factory.get_names(child_tax_id):
+                        if synonym not in new_codon_orgs:
+                            new_codon_orgs[synonym] = tax_id
+
+                # Child species using the usage table of their parent are treated as synonyms of the parent.
 
                 success = True
 
