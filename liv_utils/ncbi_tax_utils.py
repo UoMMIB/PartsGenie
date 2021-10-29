@@ -48,15 +48,9 @@ def _get_files():
     
     #WE - Measure to prevent issue where sometimes fails to load.
 
-    try:
-        urllib.request.urlretrieve(url, tmp.name)
+    skip_as_debug = True
 
-        with tarfile.open(tmp.name, 'r:gz') as tr:
-            temp_dir = tempfile.gettempdir()
-            tr.extractall(temp_dir)
-            return temp_dir
-
-    except Exception as err: 
+    if skip_as_debug:
         curr_dir = os.path.dirname(os.path.realpath(__file__))
         filepath = os.path.join(curr_dir, 'taxdump.tar.gz')
 
@@ -67,6 +61,27 @@ def _get_files():
                 temp_dir = tempfile.gettempdir()
                 tr.extractall(temp_dir)
                 return temp_dir
+    else:
+
+        try:
+            urllib.request.urlretrieve(url, tmp.name)
+
+            with tarfile.open(tmp.name, 'r:gz') as tr:
+                temp_dir = tempfile.gettempdir()
+                tr.extractall(temp_dir)
+                return temp_dir
+
+        except Exception as err: 
+            curr_dir = os.path.dirname(os.path.realpath(__file__))
+            filepath = os.path.join(curr_dir, 'taxdump.tar.gz')
+
+            if not os.path.exists(filepath):
+                return None
+            else:
+                with tarfile.open(filepath, 'r:gz') as tr:
+                    temp_dir = tempfile.gettempdir()
+                    tr.extractall(temp_dir)
+                    return temp_dir
 
 def _parse_nodes(filename):
     '''Parses nodes file.'''

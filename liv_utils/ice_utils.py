@@ -414,11 +414,20 @@ class ICEClient():
     def __get_dna(self, ice_id):
         '''Gets the sequence ICE entry.'''
         url = self.__url + '/rest/file/' + self.get_ice_number(ice_id) + \
-            '/sequence/sbol1?sid=' + self.__sid
+            '/sequence/sbol2?sid=' + self.__sid
         temp_file = tempfile.NamedTemporaryFile(delete=False)
 
         with codecs.open(temp_file.name, 'w', 'utf-8') as text_file:
-            text_file.write(net_utils.get(url))
+            details = net_utils.get(url)
+
+            #WE Section added to  handle poorly formed XML custom fields which are causing them to unable to be read by SBOL.     
+            details = details.replace("TIR target", "tirtarget")
+            details = details.replace("Global GC", "globalgc")
+            details = details.replace("Tm target", "tmtarget")
+            details = details.replace("Full name", "fullname")
+            details = details.replace("Design id", "designid")
+
+            text_file.write(details)
 
         return sbol_utils.read(temp_file.name)
 
