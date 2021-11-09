@@ -1,6 +1,6 @@
 iceApp.factory("ICEService", ["$http", "$rootScope", "$uibModal", function($http, $rootScope, $uibModal) {
 	var obj = {};
-	obj.ice = {'url': 'http://63.32.88.139/',
+	obj.ice = {'url': 'http://ice-dev.uom-rit.co.uk/',
 			'username': null,
 			'password': null,
 			'groups': null};
