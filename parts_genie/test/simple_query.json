@@ -28,7 +28,7 @@
 					"end": 60,
 					"name": "ribosome entry site",
 					"parameters": {
-						"TIR target": 15000
+						"TIR target": 20000
 					},
 					"temp_params": {
 						"fixed": false

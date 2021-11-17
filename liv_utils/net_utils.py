@@ -9,9 +9,9 @@ import requests
 
 
 def get(url, headers=None, verify=True):
-    '''GETs url.'''
+    '''GETs url.'''                    
     return _process_resp(requests.get(url, headers=headers,
-                                      verify=verify))
+                                      verify=verify))           
 
 
 def put(url, data, headers, verify=True):
@@ -22,9 +22,9 @@ def put(url, data, headers, verify=True):
 
 def post(url, data, headers, verify=True):
     '''POSTs data to url.'''
+
     return _process_resp(requests.post(url, data=data, headers=headers,
                                        verify=verify))
-
 
 def delete(url, data=None, headers=None, verify=True):
     '''DELETEs data from url.'''
