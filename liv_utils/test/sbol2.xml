@@ -1,0 +1,419 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ice="http://ice.jbei.org#" xmlns:prov="http://www.w3.org/ns/prov#">
+  <sbol:ComponentDefinition rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/1">
+    <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230"/>
+    <sbol:displayId>JPUB_000230</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dcterms:title>pRDR00004</dcterms:title>
+    <dcterms:description>PBAD driven GFPuv variant: sig1 + short linker + GFPuv + ssrA enhanced</dcterms:description>
+    <ice:id>230.0</ice:id>
+    <ice:recordId>3605ca63-ce65-4583-a6e0-a776126333ed</ice:recordId>
+    <ice:versionId>3605ca63-ce65-4583-a6e0-a776126333ed</ice:versionId>
+    <ice:recordType>plasmid</ice:recordType>
+    <ice:owner>Nathan Hillson</ice:owner>
+    <ice:ownerEmail>njhillson@lbl.gov</ice:ownerEmail>
+    <ice:creator>Nathan Hillson</ice:creator>
+    <ice:creatorEmail>njhillson@lbl.gov</ice:creatorEmail>
+    <ice:status>complete</ice:status>
+    <ice:selectionMarker>Chloramphenicol</ice:selectionMarker>
+    <ice:shortDescription>PBAD driven GFPuv variant: sig1 + short linker + GFPuv + ssrA enhanced</ice:shortDescription>
+    <ice:longDescription>original construction by AHC</ice:longDescription>
+    <ice:longDescriptionType>text</ice:longDescriptionType>
+    <ice:references>Hillson, N.J., Rosengarten, R.D., and Keasling J.D. (2012) j5 DNA Assembly Design Automation Software. ACS Synthetic Biology 1 (1), 14-21. DOI: 10.1021/sb2000116</ice:references>
+    <ice:creationTime>2011-08-09 13:59:14.238</ice:creationTime>
+    <ice:modificationTime>2013-10-15 14:07:48.193</ice:modificationTime>
+    <ice:bioSafetyLevel>1</ice:bioSafetyLevel>
+    <ice:visibility>9</ice:visibility>
+    <ice:fundingSource>Berkeley Lab LDRD 2010-11</ice:fundingSource>
+    <ice:principalInvestigator>Nathan Hillson</ice:principalInvestigator>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation12/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation12"/>
+        <sbol:displayId>annotation12</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>XhoI silent mutation</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation12/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation12/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1747</sbol:start>
+            <sbol:end>1747</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation9/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation9"/>
+        <sbol:displayId>annotation9</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>GFPuv</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000316"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation9/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation9/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1254</sbol:start>
+            <sbol:end>2084</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation7/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation7"/>
+        <sbol:displayId>annotation7</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>pBAD promoter</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000167"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation7/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation7/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1179</sbol:start>
+            <sbol:end>1206</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation18/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation18"/>
+        <sbol:displayId>annotation18</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>pSC101**</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000296"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation18/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation18/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>2230</sbol:start>
+            <sbol:end>4458</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation1/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation1"/>
+        <sbol:displayId>annotation1</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>araC</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000316"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation1/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation1/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>25</sbol:start>
+            <sbol:end>903</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation11/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation11"/>
+        <sbol:displayId>annotation11</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>short_gly_ser_linker</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation11/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation11/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1308</sbol:start>
+            <sbol:end>1331</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation17/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation17"/>
+        <sbol:displayId>annotation17</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>dbl term</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000141"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation17/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation17/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>2100</sbol:start>
+            <sbol:end>2228</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation2/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation2"/>
+        <sbol:displayId>annotation2</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>operator O2</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000410"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation2/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation2/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>932</sbol:start>
+            <sbol:end>949</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation20/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation20"/>
+        <sbol:displayId>annotation20</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>CmR</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation20/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation20/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>4580</sbol:start>
+            <sbol:end>5239</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation19/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation19"/>
+        <sbol:displayId>annotation19</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>T0</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000141"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation19/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation19/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>4459</sbol:start>
+            <sbol:end>4564</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation15/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation15"/>
+        <sbol:displayId>annotation15</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>ssrA tag enhanced</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation15/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation15/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>2043</sbol:start>
+            <sbol:end>2063</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation8/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation8"/>
+        <sbol:displayId>annotation8</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>RBS</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000552"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation8/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation8/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1234</sbol:start>
+            <sbol:end>1253</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation16/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation16"/>
+        <sbol:displayId>annotation16</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>ssrA tag</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation16/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation16/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>2064</sbol:start>
+            <sbol:end>2081</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation3/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation3"/>
+        <sbol:displayId>annotation3</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>araC promoter</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000167"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation3/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation3/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1054</sbol:start>
+            <sbol:end>1082</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#reverseComplement"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation13/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation13"/>
+        <sbol:displayId>annotation13</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>BamHI silent mutation</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation13/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation13/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1846</sbol:start>
+            <sbol:end>1846</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation4/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation4"/>
+        <sbol:displayId>annotation4</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>operator O1</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000410"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation4/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation4/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1090</sbol:start>
+            <sbol:end>1111</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation5/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation5"/>
+        <sbol:displayId>annotation5</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>CAP site</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000409"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation5/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation5/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1133</sbol:start>
+            <sbol:end>1146</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation6/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation6"/>
+        <sbol:displayId>annotation6</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>Operator I2 and I1</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000410"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation6/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation6/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1142</sbol:start>
+            <sbol:end>1180</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation10/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation10"/>
+        <sbol:displayId>annotation10</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>sig1_pep</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation10/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation10/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1257</sbol:start>
+            <sbol:end>1307</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation14/1">
+        <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation14"/>
+        <sbol:displayId>annotation14</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <dcterms:title>gly_ser_linker</dcterms:title>
+        <sbol:role rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <sbol:location>
+          <sbol:Range rdf:about="http://public-registry.jbei.org/entry/JPUB_000230/annotation14/location/1">
+            <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/JPUB_000230/annotation14/location"/>
+            <sbol:displayId>location</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>2034</sbol:start>
+            <sbol:end>2042</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="http://public-registry.jbei.org/entry/sequence_37815a40ae9de06b0674ed0ceb2ac67b7cc2ba84/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://public-registry.jbei.org/entry/sequence_37815a40ae9de06b0674ed0ceb2ac67b7cc2ba84/1">
+    <sbol:persistentIdentity rdf:resource="http://public-registry.jbei.org/entry/sequence_37815a40ae9de06b0674ed0ceb2ac67b7cc2ba84"/>
+    <sbol:displayId>sequence_37815a40ae9de06b0674ed0ceb2ac67b7cc2ba84</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <sbol:elements>tcattttcgccagatatcgacgtcttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggattctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggaatttttaagaaggagatatacatatggaaaataacgctttattagaacaaataatcaatgaagttttaaaaaatatgggtggcagtggtagcgggagctcgaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttctcttatggtgttcaatgcttttcccgttatccggatcatatgaaacggcatgactttttcaagagtgccatgcccgaaggttatgtacaggaacgcactatatctttcaaagatgacgggaactacaagacgcgtgctgaagtcaagtttgaaggtgatacccttgttaatcgtatcgagttaaaaggtattgattttaaagaagatggaaacattctcggacacaaactcgaatacaactataactcacacaatgtatacatcacggcagacaaacaaaagaatggaatcaaagctaacttcaaaattcgccacaacattgaagatggatctgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtcgacacaatctgccctttcgaaagatcccaacgaaaagcgtgaccacatggtccttcttgagtttgtaactgctgctgggattacacatggcatggatgagctcggcggcggcgcggcgaacgatgaaaactataactatgcgctggcggcgtaaatcgagtaaggatctccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatacctagggtacgggttttgctgcccgcaaacgggctgttctggtgttgctagtttgttatcagaatcgcagatccggcttcagccggtttgccggctgaaagcgctatttcttccagaattgccatgattttttccccacgggaggcgtcactggctcccgtgttgtcggcagctttgattcgataagcagcatcgcctgtttcaggctgtctatgtgtgactgttgagctgtaacaagttgtctcaggtgttcaatttcatgttctagttgctttgttttactggtttcacctgttctattaggtgttacatgctgttcatctgttacattgtcgatctgttcatggtgaacagctttgaatgcaccaaaaactcgtaaaagctctgatgtatctatcttttttacaccgttttcatctgtgcatatggacagttttccctttgatatgtaacggtgaacagttgttctacttttgtttgttagtcttgatgcttcactgatagatacaagagccataagaacctcagatccttccgtatttagccagtatgttctctagtgtggttcgttgtttttgcgtgagccatgagaacgaaccattgagatcatacttactttgcatgtcactcaaaaattttgcctcaaaactggtgagctgaatttttgcagttaaagcatcgtgtagtgtttttcttagtccgttatgtaggtaggaatctgatgtaatggttgttggtattttgtcaccattcatttttatctggttgttctcaagttcggttacgagatccatttgtctatctagttcaacttggaaaatcaacgtatcagtcgggcggcctcgcttatcaaccaccaatttcatattgctgtaagtgtttaaatctttacttattggtttcaaaacccattggttaagccttttaaactcatggtagttattttcaagcattaacatgaacttaaattcatcaaggctaatctctatatttgccttgtgagttttcttttgtgttagttcttttaataaccactcataaatcctcatagagtatttgttttcaaaagacttaacatgttccagattatattttatgaatttttttaactggaaaagataaggcaatatctcttcactaaaaactaattctaatttttcgcttgagaacttggcatagtttgtccactggaaaatctcaaagcctttaaccaaaggattcctgatttccacagttctcgtcatcagctctctggttgctttagctaatacaccataagcattttccctactgatgttcatcatctgagcgtattggttataagtgaacgataccgtccgttctttccttgtagggttttcaatcgtggggttgagtagtgccacacagcataaaattagcttggtttcatgctccgttaagtcatagcgactaatcgctagttcatttgctttgaaaacaactaattcagacatacatctcaattggtctaggtgattttaatcactataccaattgagatgggctagtcaatgataattactagtccttttcccgggtgatctgggtatctgtaaattctgctagacctttgctggaaaacttgtaaattctgctagaccctctgtaaattccgctagacctttgtgtgttttttttgtttatattcaagtggttataatttatagaataaagaaagaataaaaaaagataaaaagaatagatcccagccctgtgtataactcactactttagtcagttccgcagtattacaaaaggatgtcgcaaacgctgtttgctcctctacaaaacagaccttaaaaccctaaaggcttaagtagcaccctcgcaagctcgggcaaatcgctgaatattccttttgtctccgaccatcaggcacctgagtcgctgtctttttcgtgacattcagttcgctgcgctcacggctctggcagtgaatgggggtaaatggcactacaggcgccttttatggattcatgcaaggaaactacccataatacaagaaaagcccgtcacgggcttctcagggcgttttatggcgggtctgctatgtggtgctatctgactttttgctgttcagcagttcctgccctctgattttccagtctgaccacttcggattatcccgtgacaggtcattcagactggctaatgcacccagtaaggcagcggtatcatcaacaggcttacccgtcttactgtccctagtgcttggattctcaccaataaaaaacgcccggcggcaaccgagcgttctgaacaaatccagatggagttctgaggtcattactggatctatcaacaggagtccaagcgagctcgatatcaaattacgccccgccctgccactcatcgcagtactgttgtaattcattaagcattctgccgacatggaagccatcacaaacggcatgatgaacctgaatcgccagcggcatcagcaccttgtcgccttgcgtataatatttgcccatggtgaaaacgggggcgaagaagttgtccatattggccacgtttaaatcaaaactggtgaaactcacccagggattggctgagacgaaaaacatattctcaataaaccctttagggaaataggccaggttttcaccgtaacacgccacatcttgcgaatatatgtgtagaaactgccggaaatcgtcgtggtattcactccagagcgatgaaaacgtttcagtttgctcatggaaaacggtgtaacaagggtgaacactatcccatatcaccagctcaccgtctttcattgccatacgaaattccggatgagcattcatcaggcgggcaagaatgtgaataaaggccggataaaacttgtgcttatttttctttacggtctttaaaaaggccgtaatatccagctgaacggtctggttataggtacattgagcaactgactgaaatgcctcaaaatgttctttacgatgccattgggatatatcaacggtggtatatccagtgatttttttctccattttagcttccttagctcctgaaaatctcgataactcaaaaaatacgcccggtagtgatcttatttcattatggtgaaagttggaacctcttacgtgccgatcaacgtc</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+</rdf:RDF>

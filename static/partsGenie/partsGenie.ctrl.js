@@ -108,7 +108,7 @@ partsGenieApp.controller("partsGenieCtrl", ["$scope", "$timeout", "$uibModal", "
 			name:"RBS",
 			end: 60,
 			parameters: {
-				"TIR target": 15000
+				"TIR target": 20000
 			},
 			temp_params: {
 				fixed: false,

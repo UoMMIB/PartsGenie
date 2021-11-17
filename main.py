@@ -196,10 +196,12 @@ def export_order():
     '''Export order.'''
     data = json.loads(request.data)['designs']
 
-    if data[0]['typ'] == dna_utils.SO_PLASMID:
-        ice_client = _connect_ice(request)
-    else:
-        ice_client = None
+    # if data[0]['typ'] == dna_utils.SO_PLASMID:
+    #     ice_client = _connect_ice(request)
+    # else:
+    #     ice_client = None
+    # WE - ICE client is required for all parts.
+    ice_client = _connect_ice(request)
 
     dfs = export.export(ice_client, data)
 

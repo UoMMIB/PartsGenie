@@ -1,4 +1,5 @@
-iceApp.service("TypeaheadService", function () { /* ... */ }).controller("iceInstanceCtrl", ["$uibModalInstance", "ICEService", "TypeaheadService", function($uibModalInstance, ICEService, TypeaheadService) {
+//WE - Type ahead has been removed - so blank here to prevent error?
+iceApp.controller("iceInstanceCtrl", ["$uibModalInstance", "ICEService", "TypeaheadService", function($uibModalInstance, ICEService, TypeaheadService) {
 	var self = this;
 	
 	self.ice = function() {

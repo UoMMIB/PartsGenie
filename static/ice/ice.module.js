@@ -1,1 +1,1 @@
-var iceApp = angular.module("iceApp", []);
+var iceApp = angular.module("iceApp", ["typeaheadApp"]);
